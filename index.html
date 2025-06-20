@@ -8,8 +8,10 @@
     <meta name="robots" content="index, follow">
 
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     >
     <link href="output.css" rel="stylesheet">
@@ -39,7 +41,6 @@
             <input
               id="hamburger"
               type="checkbox"
-              checked
               class="peer opacity-0 w-0 h-[26px] cursor-pointer"
             />
             <label
@@ -71,9 +72,9 @@
                 <hr class="w-full border-gray-300">
               </li>
 
-              <li class=""><a href="#">Home</a></li>
-              <li class=""><a href="#">Usługi</a></li>
-              <li class=""><a href="#">Zespół</a></li>
+              <li class="pt-4"><a href="#">Home</a></li>
+              <li><a href="#">Usługi</a></li>
+              <li class="pb-4"><a href="#">Zespół</a></li>
 
               <li class="w-full flex justify-center">
                 <hr class="w-full border-gray-300">
@@ -81,7 +82,7 @@
               <li class="flex flex-col items-center justify-end w-full">
                 <a
                   href="#"
-                  class="px-4 py-3 bg-indigo-500 text-white mb-10 rounded-xl w-full text-center text-lg"
+                  class="button w-full"
                 >Skontaktuj się z nami</a>
               </li>
             </ul>
@@ -90,26 +91,46 @@
       </div>
     </header>
 
+    <div class="absolute top-0 -z-10 h-full w-full bg-white">
+      <div class="relative h-full w-full bg-white">
+        <div
+          class="absolute h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"
+        >
+        </div>
+      </div>
+    </div>
+
     <main class="">
       <div
         class="flex flex-col md:flex-row items-center px-4 md:px-16 py-10 md:py-20 gap-10 relative max-w-7xl mx-auto overflow-hidden"
       >
         <div class="text-center md:text-left sm:w-1/2">
-          <h1 class="text-4xl md:text-6xl font-extrabold mb-8" data-aos="fade-up">
-            HERO
+          <h1 class="text-3xl md:text-6xl font-black mt-8 mb-4" data-aos="fade-up">
+            Zdrowy pracownik to wydajny pracownik
           </h1>
+
+          <p class="text-gray-500 pb-4" data-aos="fade-up">
+            Pomagamy firmom zmniejszyć liczbę zwolnień lekarskich i zwiększyć produktywność
+            pracowników dzięki stałej opiece fizjoterapeutycznej w miejscu pracy.
+          </p>
+
+          <a href="#" class="button w-full">
+            Skontaktuj się z nami
+          </a>
         </div>
 
         <div class="">
-          <img src="/public/hero.webp" alt="hero" class="rounded-xl">
+          <img
+            src="public/hero.webp"
+            alt="hero"
+            class="rounded-lg max-h-96"
+          >
 
-          <div class="text-gray-400 text-sm text-right pr-4">
+          <div class="text-gray-400 text-xs text-right">
             Photo by <a
-              href="https://unsplash.com/@relievemassage?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-              class="text-gray-600"
-            >yury kirillov</a> on <a
-              href="https://unsplash.com/photos/a-man-getting-his-leg-examined-by-a-doctor-pbUWW-CBoqY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-              class="text-gray-600"
+              href="https://unsplash.com/@der_zeman?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Marc Zeman</a> on <a
+              href="https://unsplash.com/photos/a-woman-getting-a-back-massage-from-a-man-uLWW09LLG04?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
             >Unsplash</a>
           </div>
         </div>
