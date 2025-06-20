@@ -2,5 +2,5 @@
 
 @theme {
     --font-sans: Inter, sans-serif;
-    --container-7xl: 90rem;
+    --breakpoint-xs: 30rem;
 }
