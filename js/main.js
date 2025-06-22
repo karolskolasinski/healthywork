@@ -1,3 +1,5 @@
+import './header.js'
+
 document.addEventListener("DOMContentLoaded", () => {
   const hamburgerCheckbox = document.getElementById("hamburger");
   const menuItems = document.querySelectorAll(
