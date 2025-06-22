@@ -1,5 +1,6 @@
-import './header.js'
-import './footer.js'
+import "./header.js";
+import "./footer.js";
+import "./benefits.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const hamburgerCheckbox = document.getElementById("hamburger");
