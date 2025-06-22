@@ -344,8 +344,17 @@
   .w-40 {
     width: calc(var(--spacing) * 40);
   }
+  .w-96 {
+    width: calc(var(--spacing) * 96);
+  }
   .w-\[26px\] {
     width: 26px;
+  }
+  .w-\[50rem\] {
+    width: 50rem;
+  }
+  .w-\[60rem\] {
+    width: 60rem;
   }
   .w-fit {
     width: fit-content;
@@ -1121,6 +1130,11 @@
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
+    }
+  }
+  .md\:gap-10 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 10);
     }
   }
   .md\:gap-20 {
