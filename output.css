@@ -380,6 +380,9 @@
   .max-w-\[50rem\] {
     max-width: 50rem;
   }
+  .max-w-\[60rem\] {
+    max-width: 60rem;
+  }
   .max-w-\[80\%\] {
     max-width: 80%;
   }

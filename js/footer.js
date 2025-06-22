@@ -47,7 +47,7 @@ class Footer extends HTMLElement {
       </div>
     </div>
 
-    <small class="py-4 text-center border-t border-t-indigo-500 block">
+    <small class="py-4 text-center block">
       2025 - copyright © healthywork.pl 
     </small>
   </div>

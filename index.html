@@ -476,7 +476,7 @@
       </section>
 
       <div
-        class="splide px-4 md:px-16 max-w-[40rem] mx-auto pb-10 mb-20"
+        class="splide px-4 md:px-16 max-w-[60rem] mx-auto pb-10 mb-20"
         aria-labelledby="carousel-heading"
       >
         <div class="splide__track">
@@ -723,14 +723,34 @@
         easing: "ease-in-out",
       });
 
-      new Splide(".splide", {
-        type: "loop",
-        autoplay: true,
-        drag: false,
-        classes: {
-          page: "splide__pagination__page !bg-indigo-600 mt-10",
-        },
-      }).mount();
+      let splide;
+      function initSplide() {
+        const isMobile = window.innerWidth <= 768;
+
+        if (splide) {
+          splide.destroy();
+        }
+
+        splide = new Splide(".splide", {
+          type: "loop",
+          autoplay: true,
+          drag: isMobile,
+          classes: {
+            page: "splide__pagination__page !bg-indigo-600 mt-10",
+          },
+        });
+
+        splide.mount();
+      }
+
+      initSplide();
+
+      let resizeTimeout;
+
+      window.addEventListener("resize", () => {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => initSplide(), 200);
+      });
     </script>
   </body>
 </html>
