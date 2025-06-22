@@ -116,7 +116,7 @@
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 -960 960 960"
-                class="fill-indigo-500 min-w-5 h-5 inline"
+                class="fill-[#75d3cc] min-w-5 h-5 inline"
               >
                 <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
               </svg>
@@ -142,7 +142,7 @@
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 -960 960 960"
-                class="fill-indigo-500 min-w-5 h-5 inline"
+                class="fill-[#75d3cc] min-w-5 h-5 inline"
               >
                 <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
               </svg>
@@ -159,7 +159,7 @@
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 -960 960 960"
-                class="fill-indigo-500 min-w-5 h-5 inline"
+                class="fill-[#75d3cc] min-w-5 h-5 inline"
               >
                 <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
               </svg>
@@ -181,7 +181,7 @@
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 -960 960 960"
-              class="min-w-6 h-6 fill-indigo-500 inline"
+              class="min-w-6 h-6 fill-[#75d3cc] inline"
             >
               <path
                 d="m424-312 282-282-56-56-226 226-114-114-56 56 170 170ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"
@@ -686,6 +686,7 @@
           </p>
 
           <form
+            id="contact-form"
             action="https://formspree.io/f/mqabdrkd"
             method="POST"
             class="flex flex-col gap-4 md:gap-10 w-full max-w-[60rem] pb-2 md:flex-row"
@@ -693,21 +694,26 @@
           >
             <div class="flex-1 flex flex-col gap-4">
               <label>Imię i nazwisko:
-                <input type="text" name="name" placeholder="Podaj swoje imię i nazwisko">
+                <input type="text" name="name" placeholder="Podaj swoje imię i nazwisko" required>
               </label>
 
               <label>Email:
-                <input type="email" name="email" placeholder="Podaj swój adres email">
+                <input type="email" name="email" placeholder="Podaj swój adres email" required>
               </label>
             </div>
 
             <label class="flex-1">
               Wiadomość:
-              <textarea name="message" rows="10" placeholder="Napisz swoją wiadomość"></textarea>
+              <textarea
+                name="message"
+                rows="8"
+                placeholder="Napisz swoją wiadomość"
+                required
+              ></textarea>
             </label>
           </form>
 
-          <button type="submit" class="button">Wyślij</button>
+          <button type="submit" class="button" form="contact-form">Wyślij</button>
         </div>
       </section>
     </main>
