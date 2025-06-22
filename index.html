@@ -47,6 +47,7 @@
 
     <script src="js/aos.js"></script>
     <script src="js/splide.min.js"></script>
+    <script src="js/main.js" type="module"></script>
   </head>
 
   <body class="text-slate-900">
@@ -70,8 +71,12 @@
         </a>
 
         <nav class="hidden md:flex items-center gap-6">
-          <a href="#" class="hover:text-indigo-500 duration-100 ease-in-out">Home</a>
-          <a href="#" class="hover:text-indigo-500 duration-100 ease-in-out">Usługi</a>
+          <a href="#about" class="hover:text-indigo-500 duration-100 ease-in-out">O nas</a>
+          <a href="#services" class="hover:text-indigo-500 duration-100 ease-in-out">
+            Jak to działa?
+          </a>
+          <a href="#reviews" class="hover:text-indigo-500 duration-100 ease-in-out">Opinie</a>
+          <a href="#contact" class="hover:text-indigo-500 duration-100 ease-in-out">Kontakt</a>
         </nav>
 
         <nav class="md:hidden">
@@ -110,15 +115,15 @@
                 <hr class="w-full border-gray-300">
               </li>
 
-              <li class="pt-4"><a href="#">Home</a></li>
-              <li><a href="#">Usługi</a></li>
-              <li class="pb-4"><a href="#">Zespół</a></li>
+              <li class="pt-4"><a href="#about">O nas</a></li>
+              <li><a href="#services">Jak to działa?</a></li>
+              <li class="pb-4"><a href="#reviews">Opinie</a></li>
 
               <li class="w-full flex justify-center">
                 <hr class="w-full border-gray-300">
               </li>
               <li class="flex flex-col items-center justify-end w-full">
-                <a href="#" class="button w-full">Skontaktuj się z nami</a>
+                <a href="#contact" class="button w-full">Skontaktuj się z nami</a>
               </li>
             </ul>
           </div>
@@ -169,7 +174,7 @@
         </div>
       </section>
 
-      <section class="bg-gray-50">
+      <section class="bg-gray-50" id="about">
         <div
           class="flex flex-col items-center gap-10 px-4 md:px-16 py-10 md:py-20 max-w-7xl mx-auto"
         >
@@ -238,6 +243,7 @@
 
       <section
         class="relative flex flex-col items-center px-4 md:px-16 py-10 md:py-20 gap-10 max-w-7xl mx-auto"
+        id="services"
       >
         <div class="absolute top-0 -z-10 h-full w-full bg-white">
           <div class="relative h-full w-full bg-white">
@@ -482,6 +488,7 @@
 
       <section
         class="relative flex flex-col items-center px-4 md:px-16 py-10 md:pt-20 gap-10 max-w-7xl mx-auto"
+        id="reviews"
       >
         <div class="absolute top-0 -z-10 h-full w-full bg-white">
           <div class="relative h-full w-full bg-white">
@@ -694,7 +701,7 @@
         </div>
       </div>
 
-      <section class="bg-gray-50">
+      <section class="bg-gray-50" id="contact">
         <div
           class="flex flex-col items-center gap-10 px-4 md:px-16 py-10 md:py-20 max-w-7xl mx-auto"
         >
@@ -740,7 +747,7 @@
             <h1 class="font-bold uppercase pt-8">Fizjo.Top</h1>
           </div>
 
-          <div id="contact" class="flex flex-col gap-4 flex-1">
+          <div class="flex flex-col gap-4 flex-1">
             <h2 class="text-blue-500 text-2xl font-bold">Kontakt</h2>
 
             <div class="flex gap-2 items-center">
