@@ -1,5 +1,7 @@
 class Header extends HTMLElement {
-  connectedCallback() {
+  constructor() {
+    super();
+
     this.innerHTML = `
 <header class="z-10 sticky top-0 bg-white md:bg-white/70 md:backdrop-blur-md">
   <div class="flex justify-between items-center p-4 md:px-16 max-w-7xl mx-auto">

@@ -1,4 +1,5 @@
 import './header.js'
+import './footer.js'
 
 document.addEventListener("DOMContentLoaded", () => {
   const hamburgerCheckbox = document.getElementById("hamburger");
