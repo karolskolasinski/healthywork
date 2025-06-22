@@ -14,12 +14,12 @@ class Header extends HTMLElement {
     </a>
 
     <nav class="hidden md:flex items-center gap-6">
-      <a href="#about" class="hover:text-indigo-500 duration-100 ease-in-out">O nas</a>
-      <a href="#services" class="hover:text-indigo-500 duration-100 ease-in-out">
+      <a href="index.html#about" class="hover:text-indigo-500 duration-100 ease-in-out">O nas</a>
+      <a href="index.html#services" class="hover:text-indigo-500 duration-100 ease-in-out">
         Jak to działa?
       </a>
-      <a href="#reviews" class="hover:text-indigo-500 duration-100 ease-in-out">Opinie</a>
-      <a href="#contact" class="hover:text-indigo-500 duration-100 ease-in-out">Kontakt</a>
+      <a href="index.html#reviews" class="hover:text-indigo-500 duration-100 ease-in-out">Opinie</a>
+      <a href="index.html#contact" class="hover:text-indigo-500 duration-100 ease-in-out">Kontakt</a>
     </nav>
 
     <nav class="md:hidden">
@@ -54,20 +54,20 @@ class Header extends HTMLElement {
           </li>
 
           <li class="pt-4">
-            <a href="#about">O nas</a>
+            <a href="index.html#about">O nas</a>
           </li>
           <li>
-            <a href="#services">Jak to działa?</a>
+            <a href="index.html#services">Jak to działa?</a>
           </li>
           <li class="pb-4">
-            <a href="#reviews">Opinie</a>
+            <a href="index.html#reviews">Opinie</a>
           </li>
 
           <li class="w-full flex justify-center">
             <hr class="w-full border-gray-300" />
           </li>
           <li class="flex flex-col items-center justify-end w-full">
-            <a href="#contact" class="button w-full">Skontaktuj się z nami</a>
+            <a href="index.html#contact" class="button w-full">Skontaktuj się z nami</a>
           </li>
         </ul>
       </div>
