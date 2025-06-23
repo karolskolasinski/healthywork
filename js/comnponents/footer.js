@@ -8,7 +8,7 @@ class Footer extends HTMLElement {
     <div class="flex flex-col lg:flex-row gap-16 pb-8">
       <div class="flex-1 flex flex-col gap-2">
         <a href="/" class="flex gap-2 items-center w-fit">
-          <img src="/img/logo.svg" alt="logo" class="w-6 xs:w-7 brightness-0 invert" />
+          <img src="img/logo.svg" alt="logo" class="w-6 xs:w-7 brightness-0 invert" />
           <div class="flex flex-col font-black text-xl leading-4 xs:text-2xl xs:leading-4.5">
             <div class="text-indigo-500">healthy</div>
             <div class="tracking-tight">work</div>
@@ -22,19 +22,19 @@ class Footer extends HTMLElement {
         <h2 class="text-indigo-200 text-2xl font-bold">Kontakt</h2>
 
         <div class="flex gap-2 items-center">
-          <img src="/img/email.svg" alt="logo" class="w-6 xs:w-7 brightness-0 invert" />
+          <img src="img/email.svg" alt="logo" class="w-6 xs:w-7 brightness-0 invert" />
           <a href="mailto:@buiro@healthywork.pl?subject=Kontakt z healthywork.pl">
             buiro@healthywork.pl
           </a>
         </div>
 
         <div class="flex gap-2 items-center">
-          <img src="/img/phone.svg" alt="logo" class="w-6 xs:w-7 brightness-0 invert" />
+          <img src="img/phone.svg" alt="logo" class="w-6 xs:w-7 brightness-0 invert" />
           +48 000 000 000
         </div>
 
         <div class="flex gap-2 items-start">
-          <img src="/img/address.svg" alt="logo" class="w-6 xs:w-7 brightness-0 invert" />
+          <img src="img/address.svg" alt="logo" class="w-6 xs:w-7 brightness-0 invert" />
           <div class="flex flex-col">
             <div>ul. XXX 00</div>
             <div>Gdańsk</div>

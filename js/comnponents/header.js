@@ -6,7 +6,7 @@ class Header extends HTMLElement {
 <header class="z-10 sticky top-0 bg-white md:bg-white/70 md:backdrop-blur-md">
   <div class="flex justify-between items-center p-4 md:px-16 max-w-7xl mx-auto">
     <a href="/" class="flex gap-2 items-center">
-      <img src="img/logo.svg" alt="logo" class="w-6 xs:w-7" />  
+      <img src="img/logo.svg" alt="logo" class="w-6 xs:w-7" />
       <div class="flex flex-col font-black text-xl leading-4 xs:text-2xl xs:leading-4.5">
         <div class="text-indigo-500">healthy</div>
         <div class="tracking-tight">work</div>
