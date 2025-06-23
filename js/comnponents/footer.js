@@ -8,7 +8,7 @@ class Footer extends HTMLElement {
     <div class="flex flex-col lg:flex-row gap-16 pb-8">
       <div class="flex-1 flex flex-col gap-2">
         <a href="index.html" class="flex gap-2 items-center w-fit">
-          <img src="../img/logo.svg" alt="logo" class="w-6 xs:w-7 brightness-0 invert" />
+          <img src="/img/logo.svg" alt="logo" class="w-6 xs:w-7 brightness-0 invert" />
           <div class="flex flex-col font-black text-xl leading-4 xs:text-2xl xs:leading-4.5">
             <div class="text-indigo-500">healthy</div>
             <div class="tracking-tight">work</div>
