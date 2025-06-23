@@ -1,11 +1,15 @@
 class Header extends HTMLElement {
+  static observedAttributes = ["data-path"];
+
   constructor() {
     super();
+    const path = this.getAttribute("data-path");
+    const prefix = path === "index" ? "#" : "/healthywork#";
 
     this.innerHTML = `
 <header class="z-10 sticky top-0 bg-white md:bg-white/70 md:backdrop-blur-md">
   <div class="flex justify-between items-center p-4 md:px-16 max-w-7xl mx-auto">
-    <a href="/" class="flex gap-2 items-center">
+    <a href=${prefix} class="flex gap-2 items-center">
       <img src="img/logo.svg" alt="logo" class="w-6 xs:w-7" />
       <div class="flex flex-col font-black text-xl leading-4 xs:text-2xl xs:leading-4.5">
         <div class="text-indigo-500">healthy</div>
@@ -14,12 +18,12 @@ class Header extends HTMLElement {
     </a>
 
     <nav class="hidden md:flex items-center gap-6">
-      <a href="#about" class="hover:text-indigo-500 duration-100 ease-in-out">O nas</a>
+      <a href="${prefix}about" class="hover:text-indigo-500 duration-100 ease-in-out">O nas</a>
       <a href="#services" class="hover:text-indigo-500 duration-100 ease-in-out">
         Jak to działa?
       </a>
-      <a href="#reviews" class="hover:text-indigo-500 duration-100 ease-in-out">Opinie</a>
-      <a href="#contact" class="hover:text-indigo-500 duration-100 ease-in-out">Kontakt</a>
+      <a href="${prefix}reviews" class="hover:text-indigo-500 duration-100 ease-in-out">Opinie</a>
+      <a href="${prefix}contact" class="hover:text-indigo-500 duration-100 ease-in-out">Kontakt</a>
     </nav>
 
     <nav class="md:hidden">
@@ -41,7 +45,7 @@ class Header extends HTMLElement {
         <ul class="peer-checked:right-0 fixed top-0 -right-full w-full h-full bg-white duration-[.25s] shadow-2xl p-4 flex flex-col gap-6 text-2xl font-bold items-center">
           <li class="self-start">
             <div class="flex gap-2 items-center">
-              <img src="/img/logo.svg" alt="logo" class="w-6 xs:w-7" />
+              <img src="img/logo.svg" alt="logo" class="w-6 xs:w-7" />
               <div class="flex flex-col font-black text-xl leading-4 xs:text-2xl xs:leading-4.5">
                 <div class="text-indigo-500">healthy</div>
                 <div class="tracking-tight">work</div>
@@ -54,20 +58,20 @@ class Header extends HTMLElement {
           </li>
 
           <li class="pt-4">
-            <a href="#about">O nas</a>
+            <a href="${prefix}about">O nas</a>
           </li>
           <li>
-            <a href="#services">Jak to działa?</a>
+            <a href="${prefix}services">Jak to działa?</a>
           </li>
           <li class="pb-4">
-            <a href="#reviews">Opinie</a>
+            <a href="${prefix}reviews">Opinie</a>
           </li>
 
           <li class="w-full flex justify-center">
             <hr class="w-full border-gray-300" />
           </li>
           <li class="flex flex-col items-center justify-end w-full">
-            <a href="#contact" class="button w-full">Skontaktuj się z nami</a>
+            <a href="${prefix}contact" class="button w-full">Skontaktuj się z nami</a>
           </li>
         </ul>
       </div>

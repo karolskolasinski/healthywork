@@ -1,13 +1,17 @@
 class Footer extends HTMLElement {
+  static observedAttributes = ["data-path"];
+
   constructor() {
     super();
+    const path = this.getAttribute("data-path");
+    const prefix = path === "index" ? "#" : "/healthywork#";
 
     this.innerHTML = `
 <footer class="bg-slate-900 w-full text-white">
   <div class="max-w-7xl mx-auto px-4 md:px-16 py-10 md:pt-20 md:pb-0">
     <div class="flex flex-col lg:flex-row gap-16 pb-8">
       <div class="flex-1 flex flex-col gap-2">
-        <a href="/" class="flex gap-2 items-center w-fit">
+        <a href="${prefix}" class="flex gap-2 items-center w-fit">
           <img src="img/logo.svg" alt="logo" class="w-6 xs:w-7 brightness-0 invert" />
           <div class="flex flex-col font-black text-xl leading-4 xs:text-2xl xs:leading-4.5">
             <div class="text-indigo-500">healthy</div>
@@ -23,7 +27,7 @@ class Footer extends HTMLElement {
 
         <div class="flex gap-2 items-center">
           <img src="img/email.svg" alt="logo" class="w-6 xs:w-7 brightness-0 invert" />
-          <a href="mailto:@buiro@healthywork.pl?subject=Kontakt z healthywork.pl">
+          <a href="mailto:buiro@healthywork.pl?subject=Kontakt z healthywork.pl">
             buiro@healthywork.pl
           </a>
         </div>
