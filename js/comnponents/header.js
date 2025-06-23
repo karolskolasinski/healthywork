@@ -5,8 +5,8 @@ class Header extends HTMLElement {
     this.innerHTML = `
 <header class="z-10 sticky top-0 bg-white md:bg-white/70 md:backdrop-blur-md">
   <div class="flex justify-between items-center p-4 md:px-16 max-w-7xl mx-auto">
-    <a href="/healthywork/" class="flex gap-2 items-center">
-      <img src="../../img/logo.svg" alt="logo" class="w-6 xs:w-7" />
+    <a href="/" class="flex gap-2 items-center">
+      <img src="../../img/logo.svg" alt="logo" class="w-6 xs:w-7" />  
       <div class="flex flex-col font-black text-xl leading-4 xs:text-2xl xs:leading-4.5">
         <div class="text-indigo-500">healthy</div>
         <div class="tracking-tight">work</div>
@@ -14,12 +14,12 @@ class Header extends HTMLElement {
     </a>
 
     <nav class="hidden md:flex items-center gap-6">
-      <a href="/healthywork/index.html#about" class="hover:text-indigo-500 duration-100 ease-in-out">O nas</a>
-      <a href="/healthywork/index.html#services" class="hover:text-indigo-500 duration-100 ease-in-out">
+      <a href="/index.html#about" class="hover:text-indigo-500 duration-100 ease-in-out">O nas</a>
+      <a href="/index.html#services" class="hover:text-indigo-500 duration-100 ease-in-out">
         Jak to działa?
       </a>
-      <a href="/healthywork/index.html#reviews" class="hover:text-indigo-500 duration-100 ease-in-out">Opinie</a>
-      <a href="/healthywork/index.html#contact" class="hover:text-indigo-500 duration-100 ease-in-out">Kontakt</a>
+      <a href="/index.html#reviews" class="hover:text-indigo-500 duration-100 ease-in-out">Opinie</a>
+      <a href="/index.html#contact" class="hover:text-indigo-500 duration-100 ease-in-out">Kontakt</a>
     </nav>
 
     <nav class="md:hidden">
@@ -54,20 +54,20 @@ class Header extends HTMLElement {
           </li>
 
           <li class="pt-4">
-            <a href="/healthywork/index.html#about">O nas</a>
+            <a href="/index.html#about">O nas</a>
           </li>
           <li>
-            <a href="/healthywork/index.html#services">Jak to działa?</a>
+            <a href="/index.html#services">Jak to działa?</a>
           </li>
           <li class="pb-4">
-            <a href="/healthywork/index.html#reviews">Opinie</a>
+            <a href="/index.html#reviews">Opinie</a>
           </li>
 
           <li class="w-full flex justify-center">
             <hr class="w-full border-gray-300" />
           </li>
           <li class="flex flex-col items-center justify-end w-full">
-            <a href="/healthywork/index.html#contact" class="button w-full">Skontaktuj się z nami</a>
+            <a href="/index.html#contact" class="button w-full">Skontaktuj się z nami</a>
           </li>
         </ul>
       </div>
