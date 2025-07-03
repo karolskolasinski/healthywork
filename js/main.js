@@ -1,6 +1,7 @@
 import "./comnponents/header.js";
 import "./comnponents/footer.js";
 import "./comnponents/benefits.js";
+import "./comnponents/review.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const hamburgerCheckbox = document.getElementById("hamburger");

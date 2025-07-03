@@ -319,6 +319,12 @@
   .w-6 {
     width: calc(var(--spacing) * 6);
   }
+  .w-7 {
+    width: calc(var(--spacing) * 7);
+  }
+  .w-8 {
+    width: calc(var(--spacing) * 8);
+  }
   .w-\[26px\] {
     width: 26px;
   }
@@ -393,9 +399,6 @@
   }
   .items-center {
     align-items: center;
-  }
-  .items-start {
-    align-items: flex-start;
   }
   .justify-between {
     justify-content: space-between;
@@ -569,9 +572,26 @@
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
   }
+  .text-\[1\.5rem\] {
+    font-size: 1.5rem;
+  }
+  .text-\[1\.75rem\] {
+    font-size: 1.75rem;
+  }
+  .text-\[2rem\] {
+    font-size: 2rem;
+  }
   .leading-4 {
     --tw-leading: calc(var(--spacing) * 4);
     line-height: calc(var(--spacing) * 4);
+  }
+  .leading-4\.5 {
+    --tw-leading: calc(var(--spacing) * 4.5);
+    line-height: calc(var(--spacing) * 4.5);
+  }
+  .leading-5 {
+    --tw-leading: calc(var(--spacing) * 5);
+    line-height: calc(var(--spacing) * 5);
   }
   .leading-7 {
     --tw-leading: calc(var(--spacing) * 7);
@@ -822,16 +842,43 @@
       width: calc(var(--spacing) * 7);
     }
   }
+  .xs\:w-8 {
+    @media (width >= 30rem) {
+      width: calc(var(--spacing) * 8);
+    }
+  }
+  .xs\:w-9 {
+    @media (width >= 30rem) {
+      width: calc(var(--spacing) * 9);
+    }
+  }
   .xs\:text-2xl {
     @media (width >= 30rem) {
       font-size: var(--text-2xl);
       line-height: var(--tw-leading, var(--text-2xl--line-height));
     }
   }
+  .xs\:text-\[2rem\] {
+    @media (width >= 30rem) {
+      font-size: 2rem;
+    }
+  }
   .xs\:leading-4\.5 {
     @media (width >= 30rem) {
       --tw-leading: calc(var(--spacing) * 4.5);
       line-height: calc(var(--spacing) * 4.5);
+    }
+  }
+  .xs\:leading-5\.5 {
+    @media (width >= 30rem) {
+      --tw-leading: calc(var(--spacing) * 5.5);
+      line-height: calc(var(--spacing) * 5.5);
+    }
+  }
+  .xs\:leading-6 {
+    @media (width >= 30rem) {
+      --tw-leading: calc(var(--spacing) * 6);
+      line-height: calc(var(--spacing) * 6);
     }
   }
   .sm\:w-1\/2 {
