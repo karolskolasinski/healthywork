@@ -4,7 +4,7 @@ class Header extends HTMLElement {
   constructor() {
     super();
     const path = this.getAttribute("data-path");
-    const prefix = path === "index" ? "#" : "/healthywork#";
+    const prefix = path === "index" ? "#" : "/index.html#";
 
     this.innerHTML = `
 <header class="z-10 sticky top-0 bg-white md:bg-white/70 md:backdrop-blur-md">
