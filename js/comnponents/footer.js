@@ -4,7 +4,7 @@ class Footer extends HTMLElement {
   constructor() {
     super();
     const path = this.getAttribute("data-path");
-    const prefix = path === "index" ? "#" : "/healthywork#";
+    const prefix = path === "index" ? "#" : "/#";
 
     this.innerHTML = `
 <footer class="bg-slate-900 w-full text-white">

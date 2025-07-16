@@ -418,7 +418,7 @@
 
           <table class="table-auto w-full text-left rounded-lg overflow-hidden">
             <thead class="bg-indigo-200 font-semibold">
-              <tr class="border-b border-gray-900">
+              <tr>
                 <th class="hidden sm:table-cell p-6 text-xl"></th>
                 <th class="p-6 text-xl"><span class="text-indigo-500">healthy</span>work</th>
                 <th class="p-6 text-xl">Corporate Wellness</th>
@@ -606,13 +606,27 @@
             class="flex flex-col gap-4 md:gap-10 w-full max-w-[60rem] pb-2 md:flex-row"
             data-aos="fade-up"
           >
-            <div class="flex-1 flex flex-col gap-4">
+            <div class="flex-1 flex flex-col gap-8">
               <label>Imię i nazwisko:
-                <input type="text" name="name" placeholder="Podaj swoje imię i nazwisko" required>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Podaj swoje imię i nazwisko"
+                  required
+                  autocomplete="off"
+                  class="border border-gray-300"
+                >
               </label>
 
               <label>Email:
-                <input type="email" name="email" placeholder="Podaj swój adres email" required>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Podaj swój adres email"
+                  required
+                  autocomplete="off"
+                  class="border border-gray-300"
+                >
               </label>
             </div>
 
@@ -623,6 +637,7 @@
                 rows="8"
                 placeholder="Napisz swoją wiadomość"
                 required
+                class="border border-gray-300"
               ></textarea>
             </label>
           </form>
