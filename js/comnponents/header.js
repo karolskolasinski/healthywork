@@ -18,12 +18,10 @@ class Header extends HTMLElement {
     </a>
 
     <nav class="hidden md:flex items-center gap-6">
-      <a href="${prefix}about" class="hover:text-indigo-500 duration-100 ease-in-out">O nas</a>
-      <a href="#services" class="hover:text-indigo-500 duration-100 ease-in-out">
-        Jak to działa?
-      </a>
-      <a href="${prefix}reviews" class="hover:text-indigo-500 duration-100 ease-in-out">Opinie</a>
-      <a href="${prefix}contact" class="hover:text-indigo-500 duration-100 ease-in-out">Kontakt</a>
+      <a href="${prefix}about" class="hover:text-indigo-500">O nas</a>
+      <a href="${prefix}services" class="hover:text-indigo-500">Jak to działa?</a>
+      <a href="${prefix}reviews" class="hover:text-indigo-500">Opinie</a>
+      <a href="${prefix}contact" class="hover:text-indigo-500">Kontakt</a>
     </nav>
 
     <nav class="md:hidden">
